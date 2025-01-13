@@ -122,7 +122,7 @@ export default function App() {
           onRequestClose={() => setIsModalOpen(false)}
           className="bg-white rounded-lg p-6 shadow-xl max-w-sm w-full mx-auto transform transition duration-300 scale-100"
           overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity duration-300"
-          closeTimeoutMS={300}
+          closeTimeoutMS={100}
         >
           <h2 className="text-lg font-bold mb-4">Confirm Action</h2>
           <p className="mb-6">Are you sure you want to clear all saved data?</p>

@@ -25,3 +25,4 @@ dist-ssr
 
 # Own files
 data/
+.vite/deps
