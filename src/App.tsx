@@ -96,7 +96,6 @@ export default function App() {
               Status.Eliminated
             )
           )}
-          {brRows.newPlayers.map((r) => tableRow(r, "*", Status.New))}
         </tbody>
       </table>
       <div className="flex flex-row bg-gray-800 rounded-md p-3 mt-8 text-lg items-center">
