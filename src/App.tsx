@@ -39,6 +39,10 @@ export default function App() {
     dispatch({ type: "reset" });
   };
 
+  const numAlive =
+    brRows.remainingPlayers.filter((row) => row.alive).length +
+    brRows.eliminatedPlayers.filter((row) => row.alive).length;
+
   function tableRow(row: BrRow, idx: number | string, rowType: Status) {
     return (
       <tr
@@ -82,7 +86,7 @@ export default function App() {
             <th className="p-3 text-xl">Position</th>
             <th className="p-3 text-xl">Player</th>
             <th className="p-3 text-xl">Last Game</th>
-            <th className="p-3 text-xl">Status</th>
+            <th className="p-3 text-xl">{`Status ( ${numAlive}💚 )`}</th>
           </tr>
         </thead>
         <tbody>
